@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container_header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.493);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.192);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 15vh;
+}
+
+.btn_header {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 226, 226);
+}
+
+.btn_header:hover {
+  background-color: rgb(255, 159, 159);
+}
+
+.container_main {
+  background-color: #30da1d5d;
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.conainer_cadastro {
+  /* border: 1px solid black; */
+  display: flex;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.conainer_cadastro div {
+  width: 300px;
+  padding: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.generic_label {
+  margin: 5px 15px;
+  font-weight: bolder;
+}
+
+.generic_input {
+  margin: 5px 10px;
+  border-radius: 15px;
+  padding: 8px;
+  width: 90%;
+}
+
+.input_textarea {
+  margin: 10px;
+}
+
+.input_pagamento,
+.input_servico {
+  margin: 5px 5px;
+}
+
+
+.label_servico {
+  margin: 5px;
+}
+
+.label_pagamento{
+  margin: 7px;
+}
+
+.input_data {
+  border-radius: 15px;
+  margin: 0px 25px;
+  padding: 8px;
+}
+
+.btn-submit{
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.btn-submit:hover{
+  background-color: rgb(226, 221, 221);
+  transform: scale(1.10);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.726);
+  color: #ffffff;
+  margin: 10px 0px 0px;
+  padding: 5px;
+}
+
+footer span {
+  font-weight: bolder;
+}
