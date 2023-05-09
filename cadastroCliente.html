@@ -13,7 +13,10 @@
 <body>
   <header class="container_header">
     <img class="imag_header" src="image/biovet-logo.png" alt="logo_empresa">
-    <button class="btn_header">Sair</button>
+    <a href="index.html">
+      <button class="btn_header">Sair</button>
+    </a>
+    
   </header>
   <main class="container_main">
     <h1>Cadastro de cliente</h1>
@@ -44,6 +47,26 @@
         <div>
           <label class="generic_label" for="telefone">Telefone:</label>
           <input class="generic_input" type="tel" name="telefone" id="telefone" placeholder="(xx) xxxx-xxxx" required>
+        </div>
+
+        <div>
+          <label class="generic_label" for="telefone">Rua:</label>
+          <input class="generic_input" type="text" name="telefone" id="telefone" placeholder="Nome da Rua" required>
+        </div>
+
+        <div>
+          <label class="generic_label" for="telefone">Nº:</label>
+          <input class="generic_input" type="number" name="telefone" id="telefone" placeholder="Numero do local" required>
+        </div>
+
+        <div>
+          <label class="generic_label" for="telefone">CEP:</label>
+          <input class="generic_input" type="number" name="telefone" id="telefone" placeholder="CEP" required>
+        </div>
+
+        <div>
+          <label class="generic_label" for="telefone">Bairro:</label>
+          <input class="generic_input" type="text" name="telefone" id="telefone" placeholder="Nome do Bairro" required>
         </div>
 
         <div>
@@ -110,13 +133,15 @@
             placeholder="Descreva o Serviço" required></textarea>
         </div>
 
+        
         <input class="btn-submit" type="submit" value="Criar Serviço">
+        
       
 
     </section>
 
     <footer>
-      <p>Desencolvido por: <span>Rafael e Daniele</span></p>
+      <p>Desencolvido por: <span>Rafael e Danielle</span></p>
     </footer>
 
   </main>
