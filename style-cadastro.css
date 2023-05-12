@@ -32,7 +32,7 @@
   padding: 20px 0px 0px 0px;
 }
 
-.conainer_cadastro {
+.container_cadastro {
   /* border: 1px solid black; */
   display: flex;
   margin: 10px;
@@ -41,13 +41,21 @@
   padding: 10px;
 }
 
-.conainer_cadastro div {
+.container_cadastro div {
   width: 300px;
   padding: 3px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: flex-start;
+}
+
+.container_cadastro .div_textarea{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
 }
 
 .generic_label {
@@ -86,14 +94,14 @@
   padding: 8px;
 }
 
-.btn-submit{
-  margin: 10px;
+.btn_submit{
+  margin: 15px;
   padding: 10px;
   border-radius: 10px;
   align-self: center;
 }
 
-.btn-submit:hover{
+.btn_submit:hover{
   background-color: rgb(226, 221, 221);
   transform: scale(1.10);
 }
