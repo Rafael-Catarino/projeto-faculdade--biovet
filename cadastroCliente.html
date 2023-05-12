@@ -21,16 +21,16 @@
   <main class="container_main">
     <h1>Cadastro de cliente</h1>
     <section>
-      <form class="conainer_cadastro" action="#">
+      <form class="container_cadastro" action="#">
         <div>
-          <label class="generic_label" for="nome_cliente">Nome:</label>
-          <input class="generic_input" type="text" name="nome_cliente" id="nome_cliente" placeholder="Digite o Nome"
+          <label class="generic_label" for="nome">Nome:</label>
+          <input class="generic_input" type="text" name="nome" id="nome" placeholder="Digite o Nome"
             required>
         </div>
 
         <div>
           <label class="generic_label" for="cpf">CPF / CNPJ:</label>
-          <input class="generic_input" type="number" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx" required>
+          <input class="generic_input" type="number" name="cpf" id="cpf" placeholder="Digite CPF/CNPJ" required>
         </div>
 
         <div>
@@ -41,32 +41,32 @@
 
         <div>
           <label class="generic_label" for="celular">Celular:</label>
-          <input class="generic_input" type="tel" name="celular" id="celular" placeholder="(xx) xxxx-xxxxx" required>
+          <input class="generic_input" type="number" name="celular" id="celular" placeholder="Digite Celular" required>
         </div>
 
         <div>
           <label class="generic_label" for="telefone">Telefone:</label>
-          <input class="generic_input" type="tel" name="telefone" id="telefone" placeholder="(xx) xxxx-xxxx" required>
+          <input class="generic_input" type="number" name="telefone" id="telefone" placeholder="Digite Telefone " required>
         </div>
 
         <div>
           <label class="generic_label" for="telefone">Rua:</label>
-          <input class="generic_input" type="text" name="telefone" id="telefone" placeholder="Nome da Rua" required>
+          <input class="generic_input" type="text" name="rua" id="rua" placeholder="Nome da Rua" required>
         </div>
 
         <div>
-          <label class="generic_label" for="telefone">Nº:</label>
-          <input class="generic_input" type="number" name="telefone" id="telefone" placeholder="Numero do local" required>
+          <label class="generic_label" for="number">Nº:</label>
+          <input class="generic_input" type="number" name="number" id="number" placeholder="Numero do local" required>
         </div>
 
         <div>
-          <label class="generic_label" for="telefone">CEP:</label>
-          <input class="generic_input" type="number" name="telefone" id="telefone" placeholder="CEP" required>
+          <label class="generic_label" for="cep">CEP:</label>
+          <input class="generic_input" type="number" name="cep" id="cep" placeholder="CEP" required>
         </div>
 
         <div>
-          <label class="generic_label" for="telefone">Bairro:</label>
-          <input class="generic_input" type="text" name="telefone" id="telefone" placeholder="Nome do Bairro" required>
+          <label class="generic_label" for="bairro">Bairro:</label>
+          <input class="generic_input" type="text" name="bairro" id="bairro" placeholder="Nome do Bairro" required>
         </div>
 
         <div>
@@ -104,18 +104,18 @@
           <legend class="generic_label">Forma de pagamento:</legend>
           <div>
             <label class="label_pagamento" for="dinheiro">
-              <input class="input_servico" type="radio" name="pagamento" value="dinheiro" id="dinheiro" required>Dinheiro
+              <input class="input_servico payment" type="radio" name="pagamento" value="dinheiro" id="dinheiro" required>Dinheiro
             </label>
-            <label class="label_pagamento" for="cartao">
+            <label class="label_pagamento payment" for="cartao">
               <input class="input_servico" type="radio" name="pagamento" value="cartao" id="cartao" required>Cartão
             </label>
-            <label class="label_pagamento" for="cheque">
+            <label class="label_pagamento payment" for="cheque">
               <input class="input_servico" type="radio" name="pagamento" value="cheque" id="cheque" required>Cheque
             </label>
-            <label class="label_pagamento" for="pix">
+            <label class="label_pagamento payment" for="pix">
               <input class="input_servico" type="radio" name="pagamento" value="pix" id="pix" required>Pix
             </label>
-            <label class="label_pagamento" for="boleto">
+            <label class="label_pagamento payment" for="boleto">
               <input class="input_servico" type="radio" name="pagamento" value="boleto" id="boleto" required>Boleto
             </label>
           </div>
@@ -125,16 +125,18 @@
           <label class="generic_label" for="data">Data e a hora do serviço: </label>
           <input class="input_data" type="datetime-local" name="data" id="data" required>
         </div>
-      </form>
 
-        <div>
+        <div class="div_textarea">
           <label class="generic_label" for="descricao">Descrição:</label>
-          <textarea class="generic_input input_textarea" name="descricao" id="descricao" rows="5"
+          <textarea class="generic_input input_textarea" name="descricao" id="description" rows="5"
             placeholder="Descreva o Serviço" required></textarea>
         </div>
 
+        <input class="btn_submit"type="submit" value="Criar Serviço">
+      </form>
+
         
-        <input class="btn-submit" type="submit" value="Criar Serviço">
+
         
       
 
@@ -147,5 +149,6 @@
   </main>
 
 </body>
+<script src="script.js"></script>
 
 </html>
