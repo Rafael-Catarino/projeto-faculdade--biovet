@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style-cadastro.css">
   <title>Biovet</title>
 </head>
 
 <body>
   <header class="container_header">
-    <img class="imag_header" src="image/biovet-logo.png" alt="logo_empresa">
-    <a href="index.html">
+    <img class="imag_header" src="../image/biovet-logo.png" alt="logo_empresa">
+    <a href="indexVendedor.html">
       <button class="btn_header">Sair</button>
     </a>
     
@@ -73,27 +73,27 @@
           <label class="generic_label" for="">Serviço:</label>
           <div>
             <label class="label_servico"  for="servico_rato">
-              <input class="input_servico" type="checkbox" name="servico" id="servico_rato">Rato
+              <input class="input_servico servico" type="checkbox" name="servico" value="rato" id="servico_rato">Rato
             </label>
 
             <label class="label_servico" for="servico_barata">
-              <input class="input_servico" type="checkbox" name="servico" id="servico_barata">Barata
+              <input class="input_servico servico" type="checkbox" name="servico" value="barata" id="servico_barata">Barata
             </label>
 
             <label class="label_servico" for="servico_formiga">
-              <input class="input_servico" type="checkbox" name="servico" id="servico_formiga">Formiga
+              <input class="input_servico servico" type="checkbox" name="servico" value="formiga" id="servico_formiga">Formiga
             </label>
 
             <label class="label_servico" for="servico_cupim">
-              <input class="input_servico" type="checkbox" name="servico" id="servico_cupim">Cupim
+              <input class="input_servico servico" type="checkbox" name="servico" value="cupim" id="servico_cupim">Cupim
             </label>
 
             <label class="label_servico" for="servico_caixaDagua">
-              <input class="input_servico" type="checkbox" name="servico" id="servico_caixaDagua">Caixa D'água
+              <input class="input_servico servico" type="checkbox" name="servico" value="caixadagua" id="servico_caixaDagua">Caixa D'água
             </label>
 
             <label class="label_servico" for="servico_outro">
-              <input class="input_servico" type="checkbox" name="servico" id="servico_outro">Outro
+              <input class="input_servico servico" type="checkbox" name="servico" value="outro" id="servico_outro">Outro
             </label>
           </div>
         </div>
@@ -103,20 +103,20 @@
         <div>
           <legend class="generic_label">Forma de pagamento:</legend>
           <div>
-            <label class="label_pagamento" for="dinheiro">
-              <input class="input_servico payment" type="radio" name="pagamento" value="dinheiro" id="dinheiro" required>Dinheiro
+            <label class="label_pagamento" for="id-dinheiro">
+              <input class="input_servico payment" type="radio" name="pagamento" value="dinheiro" id="id-dinheiro" required>Dinheiro
             </label>
-            <label class="label_pagamento payment" for="cartao">
-              <input class="input_servico" type="radio" name="pagamento" value="cartao" id="cartao" required>Cartão
+            <label class="label_pagamento" for="id-cartao">
+              <input class="input_servico payment" type="radio" name="pagamento" value="cartao" id="id-cartao">Cartão
             </label>
-            <label class="label_pagamento payment" for="cheque">
-              <input class="input_servico" type="radio" name="pagamento" value="cheque" id="cheque" required>Cheque
+            <label class="label_pagamento" for="id-cheque">
+              <input class="input_servico payment" type="radio" name="pagamento" value="cheque" id="id-cheque">Cheque
             </label>
-            <label class="label_pagamento payment" for="pix">
-              <input class="input_servico" type="radio" name="pagamento" value="pix" id="pix" required>Pix
+            <label class="label_pagamento" for="id-pix">
+              <input class="input_servico payment" type="radio" name="pagamento" value="pix" id="id-pix">Pix
             </label>
-            <label class="label_pagamento payment" for="boleto">
-              <input class="input_servico" type="radio" name="pagamento" value="boleto" id="boleto" required>Boleto
+            <label class="label_pagamento" for="id-boleto">
+              <input class="input_servico payment" type="radio" name="pagamento" value="boleto" id="id-boleto">Boleto
             </label>
           </div>
         </div>
