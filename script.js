@@ -29,36 +29,31 @@ const getInputCheckbox = () => {
     }
   }
   return servicos;
-}
-
-const checkCPF = () => {
 };
 
-const checkCellPhone = () => {
-};
+const checkCPF = () => { };
 
-const checkTelephone = () => {
-};
+const checkCellPhone = () => { };
 
-const checkCEP = () => {
-};
+const checkTelephone = () => { };
+
+const checkCEP = () => { };
 
 containerCadastro.addEventListener("submit", (event) => {
   event.preventDefault();
-    let client = {
-      Nome: inputName.value.toUpperCase(),
-      CPF: inputCPF.value,
-      Email: inputEmail.value,
-      Celular: inputCellPhone.value,
-      Telefone: inputTelephone.value,
-      Rua: inputRua.value,
-      Numero: inputN.value,
-      CEP: inputCEP.value,
-      Bairro: inputBairro.value,
-      Pagamento: getInputRadio(),
-      Servico: getInputCheckbox(),
-      Data: inputData.value,
-      Descricao: inputDescription.value,
-    };
-    console.log(client);
+  let client = {
+    Nome: inputName.value.toUpperCase(),
+    CPF: inputCPF.value,
+    Email: inputEmail.value,
+    Celular: inputCellPhone.value,
+    Telefone: inputTelephone.value,
+    Rua: inputRua.value,
+    Numero: inputN.value,
+    CEP: inputCEP.value,
+    Bairro: inputBairro.value,
+    Pagamento: getInputRadio(),
+    Servico: getInputCheckbox(),
+    Data: inputData.value,
+    Descricao: inputDescription.value,
+  };
 });
