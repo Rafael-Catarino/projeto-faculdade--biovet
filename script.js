@@ -39,6 +39,22 @@ const checkTelephone = () => { };
 
 const checkCEP = () => { };
 
+inputCPF.addEventListener("keypress", () => {
+  let inputCEPLength = inputCPF.value.length;
+  if(inputCEPLength === 3) {
+    console.log("foi")
+    inputCPF.value += ".";
+  }
+  if(inputCEPLength === 7) {
+    console.log("foi")
+    inputCPF.value += ".";
+  }
+  if(inputCEPLength === 11) {
+    inputCPF.value += "-";
+  }
+});
+
+
 containerCadastro.addEventListener("submit", (event) => {
   event.preventDefault();
   let client = {
@@ -56,4 +72,5 @@ containerCadastro.addEventListener("submit", (event) => {
     Data: inputData.value,
     Descricao: inputDescription.value,
   };
+  console.log(client);
 });

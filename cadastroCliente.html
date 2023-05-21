@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style-cadastro.css" />
     <title>Biovet</title>
   </head>
@@ -40,10 +40,12 @@
             <label class="generic_label" for="cpf">CPF / CNPJ:</label>
             <input
               class="generic_input"
-              type="number"
+              type="text"
               name="cpf"
               id="cpf"
               placeholder="Digite CPF/CNPJ"
+              autocomplete="off"
+              maxlength="14"
               required
             />
           </div>
