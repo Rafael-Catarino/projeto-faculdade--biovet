@@ -1,10 +1,10 @@
 const containerCadastro = document.querySelector(".container_cadastro");
-const inputName = document.querySelector("#nome");
+const inputName = document.querySelector("#name");
 const inputCPF = document.querySelector("#cpf");
 const inputEmail = document.querySelector("#email");
-const inputCellPhone = document.querySelector("#celular");
-const inputTelephone = document.querySelector("#telefone");
-const inputRua = document.querySelector("#rua");
+const inputCellPhone = document.querySelector("#cellPhone");
+const inputTelephone = document.querySelector("#telephone");
+const inputRoad = document.querySelector("#road");
 const inputN = document.querySelector("#number");
 const inputCEP = document.querySelector("#cep");
 const inputBairro = document.querySelector("#bairro");
@@ -31,29 +31,55 @@ const getInputCheckbox = () => {
   return servicos;
 };
 
-const checkCPF = () => { };
+const checkCPF = () => {};
 
-const checkCellPhone = () => { };
+const checkCellPhone = () => {};
 
-const checkTelephone = () => { };
+const checkTelephone = () => {};
 
-const checkCEP = () => { };
+const checkCEP = () => {};
 
 inputCPF.addEventListener("keypress", () => {
   let inputCEPLength = inputCPF.value.length;
-  if(inputCEPLength === 3) {
-    console.log("foi")
+  if (inputCEPLength === 3 || inputCEPLength === 7) {
     inputCPF.value += ".";
-  }
-  if(inputCEPLength === 7) {
-    console.log("foi")
-    inputCPF.value += ".";
-  }
-  if(inputCEPLength === 11) {
+  } else if (inputCEPLength === 11) {
     inputCPF.value += "-";
   }
 });
 
+inputCellPhone.addEventListener("keypress", () => {
+  let inputCellPhoneLength = inputCellPhone.value.length;
+  if (inputCellPhoneLength === 0) {
+    inputCellPhone.value += "(";
+  } else if (inputCellPhoneLength === 3) {
+    inputCellPhone.value += ") ";
+  } else if (inputCellPhoneLength === 10) {
+    inputCellPhone.value += ".";
+  }
+});
+
+inputTelephone.addEventListener("keypress", () => {
+  let inputTelephoneLength = inputTelephone.value.length;
+  if (inputTelephoneLength === 0) {
+    inputTelephone.value += "(";
+  } else if (inputTelephoneLength === 3) {
+    inputTelephone.value += ") ";
+  } else if (inputTelephoneLength === 9) {
+    inputTelephone.value += ".";
+  }
+});
+
+inputCEP.addEventListener("keypress", () => {
+  let inputCEPLength = inputCEP.value.length;
+  if (inputCEPLength === 5) {
+    inputCEP.value += " - ";
+  }
+});
+
+const printClient = (client) => {
+  console.log(client);
+};
 
 containerCadastro.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -63,7 +89,7 @@ containerCadastro.addEventListener("submit", (event) => {
     Email: inputEmail.value,
     Celular: inputCellPhone.value,
     Telefone: inputTelephone.value,
-    Rua: inputRua.value,
+    Rua: inputRoad.value,
     Numero: inputN.value,
     CEP: inputCEP.value,
     Bairro: inputBairro.value,
@@ -72,5 +98,5 @@ containerCadastro.addEventListener("submit", (event) => {
     Data: inputData.value,
     Descricao: inputDescription.value,
   };
-  console.log(client);
+  printClient(client);
 });
