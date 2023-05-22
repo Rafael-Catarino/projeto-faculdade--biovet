@@ -55,7 +55,7 @@ inputCellPhone.addEventListener("keypress", () => {
   } else if (inputCellPhoneLength === 3) {
     inputCellPhone.value += ") ";
   } else if (inputCellPhoneLength === 10) {
-    inputCellPhone.value += ".";
+    inputCellPhone.value += "-";
   }
 });
 
@@ -66,7 +66,7 @@ inputTelephone.addEventListener("keypress", () => {
   } else if (inputTelephoneLength === 3) {
     inputTelephone.value += ") ";
   } else if (inputTelephoneLength === 9) {
-    inputTelephone.value += ".";
+    inputTelephone.value += "-";
   }
 });
 
